@@ -5,6 +5,7 @@ import { NavItem } from './style';
 export default function BasicNav() {
   return (
     <>
+    <div className="title">MicroBlogX</div>
       <NavItem>
         <StyledNavLink exact to="/">
           Home

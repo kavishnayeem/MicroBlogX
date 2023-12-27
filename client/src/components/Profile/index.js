@@ -268,7 +268,7 @@ function Profile({ profile }) {
         <ProfileHeaderMenu>
           <HeaderMenuList>
             <ListItem as={Link} to={`/profile/${profile.user._id}`}>
-              <Key>Tweets</Key>
+              <Key>Blogs</Key>
             </ListItem>
 
             <ListItem as={Link} to={`/profile/${profile.user._id}/likes`}>

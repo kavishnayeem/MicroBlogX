@@ -157,7 +157,7 @@ export function TweetModal() {
     <DialogOverlay onDismiss={back}>
       <CloseButton onClick={back} />
       <DialogContent
-        aria-label="Tweet"
+        aria-label="Blogs"
         css={`
           width: 100%;
           max-width: 600px;

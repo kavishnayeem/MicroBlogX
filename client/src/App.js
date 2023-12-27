@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import { Wrapper, Content } from 'shared/layout';
-
+import {useState,useEffect} from "react";
 import SignInPage from 'pages/SignIn';
 import SignUpPage from 'pages/SignUp';
 import Homepage from 'pages/Homepage';
@@ -18,6 +18,19 @@ import TweetPage from 'pages/Tweet';
 import CreateTweetPage from 'pages/CreateTweet';
 
 function App() {
+  const [seed, setSeed] = useState(1);
+  const reset = () => {
+       setSeed(Math.random());
+   }
+useEffect(() => {
+    const interval = setInterval(() => {
+      reset() 
+    }, 1000); 
+
+    return () => {
+      clearInterval(interval); 
+    };
+  }, []);
   return (
     <Router>
       <Wrapper>
@@ -26,7 +39,7 @@ function App() {
           <Header />
           <ModalSwitch>
             <Route exact path="/">
-              <Homepage />
+              <Homepage key={seed}/>
             </Route>
             <Route path="/compose/tweet">
               <CreateTweetPage />

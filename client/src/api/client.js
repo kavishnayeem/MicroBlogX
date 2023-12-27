@@ -2,9 +2,11 @@ import axios from 'axios';
 import { logoutUser } from './auth';
 
 export const API_BASE_URL =
-  window.location.hostname === 'localhost'
-    ? 'http://localhost:3001/api'
-    : process.env.REACT_APP_API_URL;
+window.location.hostname === 'localhost'
+? 'http://localhost:3001/api'
+: window.location.hostname === '192.168.249.206'
+? 'http://192.168.249.206:3001/api'
+: process.env.REACT_APP_API_URL;
 
 axios.defaults.baseURL = API_BASE_URL;
 

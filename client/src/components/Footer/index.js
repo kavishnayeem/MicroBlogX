@@ -5,7 +5,7 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
   return (
     <StyledFooter>
-      <Text>{currentYear} Twitter Clone</Text>
+      <Text>{currentYear} MicroBlogX</Text>
     </StyledFooter>
   );
 }

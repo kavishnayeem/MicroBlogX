@@ -1,0 +1,16 @@
+.title{
+    font-size: 35px;
+    padding-right: 350px;
+    font-weight: 600;
+    background-image: linear-gradient(to left, #427D9D, #164863); 
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+.btn{
+    background-image: linear-gradient(to left, #427D9D, #164863); 
+    
+}
+.btn1:hover{
+    color: linear-gradient(to left, #22092C, #872341); 
+}

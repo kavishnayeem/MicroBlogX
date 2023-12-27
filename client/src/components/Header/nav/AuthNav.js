@@ -1,4 +1,5 @@
 import React from 'react';
+import "./nav.css"
 import { Link, useHistory, useLocation } from 'react-router-dom';
 import { keyframes } from 'styled-components/macro';
 import {
@@ -33,13 +34,15 @@ function AuthNav() {
 
   return (
     <>
-      <NavItem>
-        <StyledNavLink exact to="/">
+    <div className='title'>MicroBlogX</div>
+      <NavItem >
+        <StyledNavLink exact to="/" >
           Home
         </StyledNavLink>
       </NavItem>
       <NavItem>
         <Button
+          className='btn'
           primary
           type="text"
           onClick={() =>
@@ -49,7 +52,7 @@ function AuthNav() {
             })
           }
         >
-          Tweet
+          BlogX
         </Button>
       </NavItem>
       <NavItem>

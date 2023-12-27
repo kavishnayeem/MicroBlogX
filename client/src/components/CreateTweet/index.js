@@ -27,9 +27,9 @@ export function CreateTweetModal() {
 
   return (
     <DialogOverlay onDismiss={close}>
-      <StyledDialogContent aria-label="Compose new tweet">
+      <StyledDialogContent aria-label="Compose new Blog">
         <Header>
-          <Title>Compose new Tweet</Title>
+          <Title>Compose new Blog</Title>
           <CloseButton onClick={close}>
             <IoMdClose />
           </CloseButton>
@@ -105,7 +105,7 @@ function CreateTweetForm({ onCreate }) {
           text.length < 1 || text.length > 280 || createTweetMutation.isLoading
         }
       >
-        {createTweetMutation.isLoading ? 'Loading...' : 'Tweet'}
+        {createTweetMutation.isLoading ? 'Loading...' : 'Post'}
       </Button>
     </Form>
   );

@@ -178,7 +178,7 @@ function TweetsBoard({
                 ))}
               </>
             ) : (
-              <InfoText>There are no tweets to display</InfoText>
+              <InfoText>There are no Blogs to display</InfoText>
             )}
           </List>
           {numberOfTweets > 0 && (
@@ -209,7 +209,7 @@ function TweetsBoard({
 }
 
 TweetsBoard.defaultProps = {
-  headerText: 'Tweets',
+  headerText: 'Blogs',
   queryKey: ['tweets', {}],
 };
 
